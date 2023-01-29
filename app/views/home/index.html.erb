@@ -1,6 +1,7 @@
 <h1>Welcome!</h1>
 <p>
-  Account: <%= current_user.email %>
+  Account: <%= current_user.email %><br>
+  Sbn: <%= current_user.sbn %>
 </p>
 <p>
   <%= link_to 'Edit account', edit_user_registration_path %>
