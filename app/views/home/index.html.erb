@@ -1,11 +1,23 @@
-<h1>Welcome!</h1>
-<p>
-  Account: <%= current_user.email %><br>
-  Sbn: <%= current_user.sbn %>
-</p>
-<p>
-  <%= link_to 'Edit account', edit_user_registration_path %>
-</p>
-<p>
-  <%= link_to 'Sign out', destroy_user_session_path, data: { turbo_method: :delete } %>
-</p>
+
+<%= render "shared/nav" %>
+  
+<div class="container">
+  <h1>Welcome!</h1>
+    <p>
+      Account: <%= current_user.email %><br>
+      Sbn: <%= current_user.sbn %>
+    </p>
+    <p>
+      <%= link_to 'Edit account', edit_user_registration_path %>
+    </p>
+    <p>
+      <%= link_to 'Sign out', destroy_user_session_path, data: { turbo_method: :delete } %>
+    </p>
+</div>
+
+<hr>
+<%= @myhash[:name] %><br>
+<%= @myhash[:address] %><br>
+<%= @myhash[:phone] %>
+
+
