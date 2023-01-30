@@ -21,14 +21,21 @@
   <div class="col d-flex justify-content-center">
     <div class="card " style="width: 33rem;">
       <div class="card-body">
+    <% if @myhash[:name].nil? %>
+        <%= "Invalid SBN" %>
+    <% else %>
         <%= @myhash[:name] %><br>
         <%= @myhash[:address] %><br>
         <%= @myhash[:phone] %><br>
         <%= @myhash[:email] %><br>
         <%= link_to "Do something", trials_index_path, class: 'btn btn-primary' %>
+        <% end %>
       </div>
     </div>
   </div>
+
+<hr>
+
 
 
 
