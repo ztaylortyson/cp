@@ -1,0 +1,2 @@
+class Ncf < ApplicationRecord
+end

@@ -1,0 +1,36 @@
+<%= render 'shared/nav' %>
+
+<h3>Ncfs#index</h3>
+
+		<% if @ncfs.empty? %>
+			<p>You are not tracking any new case filings.</p>
+		<% else %>
+			<p>You are tracking <%= @ncfs.count %></p>
+		<div class="container">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Name</th>
+				</tr>
+			<tbody>
+				<tr>
+				<% @ncfs.each do |i| %>
+					<td><%= @ncfs[:name] %></td>
+				<% end %> 
+
+
+			<%= @ncfs.inspect %>
+		<% end %>
+
+		<%= form_with url: "/search", method: :get do |form| %>
+			  <%= form.label :query, "Track name:" %>
+			  <%= form.text_field :query %>
+			  <%= form.submit "Add", class: "btn btn-primary"  %>
+		<% end %>
+
+
+	
+
+
+
+ 
