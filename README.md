@@ -23,11 +23,4 @@ Things you may want to cover:
 
 * 
 
-## Run app 
 
-``` 
-$ bin/setup 
-$ rails s
-```
-## Related post
-[How to customize Devise for Rails 7\.0 and Turbo \- DEV Community](https://dev.to/jnchito/how-to-customize-devise-for-rails-70-and-turbo-ih)
