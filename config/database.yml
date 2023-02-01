@@ -16,6 +16,7 @@
 #
 development:
   adapter: postgresql
+  host: localhost
   encoding: unicode
   database: cp_development
   pool: 5
