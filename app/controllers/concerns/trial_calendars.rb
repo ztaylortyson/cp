@@ -27,7 +27,7 @@ module TrialCalendars
                  myhash[:trial_name] = i.css('td')[3].text
                  myhash[:trial_number] = i.css('td')[1].text
                  myhash[:trial_time] = i.css('td')[0].text
-                 myhash[:event_time] = i.css('td')[2].text
+                 myhash[:event_type] = i.css('td')[2].text
                  @arry << myhash
             end
             # p i.text.strip if i.inner_html.include?('Civil Jury Trial')

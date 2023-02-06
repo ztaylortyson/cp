@@ -25,11 +25,12 @@
 			<tbody>
 				<tr>
 				<% @arry.each do |i| %>
-					<td><%= i[:trial_time] %></td>	
+					<td ><%= i[:trial_time] %></td>	
 					<td><u><%= i[:trial_name] %></u><%= i[:trial_number] %></td>
-					<td><%= i[:type] %></td>	
-				<% end %>
+					<td><%= i[:event_type] %></td>	
+				
 				</tr>  
+				<% end %>
 		</table>
 	</div>
 
